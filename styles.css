@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root {
+    --soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --main_BG: hsl(217, 54%, 11%);
+    --card_BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main_BG);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    background-color: hsl(217, 54%, 10%);
+    padding: 0.75em;
+    border-radius: 1em 1em 3em 3em;
+    height: 31.5em;
+    width: 17.5em;
+}
+
+.container {
+    background-color: var(--card_BG);
+    padding: 1em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    position: relative;
+}
+
+#equilibrium {
+    border-radius: 0.5em;
+    height: 15em;
+    width: 100%;
+}
+
+.view {
+    border-radius: 0.5em;
+    height: 15em;
+    width: 87.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(178, 100%, 50%, 0.7);
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    opacity: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.view:hover {
+    opacity: 1;
+}
+
+h1 {
+    font-size: 17px;
+}
+
+span {
+    color: var(--soft_blue);
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.flex_space_between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    gap: 2.5em;
+    border-bottom: 2px solid var(--line);
+    padding-bottom: 1em;
+}
+
+.foot>img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.flex_space_between>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+a:hover,
+.eth {
+    color: var(--Cyan);
+}
